@@ -1,0 +1,9 @@
+<?php
+session_start();
+?>
+<?php
+if(isset($_POST['logout'])){
+    unset($_SESSION["id"]);
+    header('Location:../mypro/index.php');
+}
+?>
